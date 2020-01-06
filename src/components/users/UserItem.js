@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Col, Card, CardImg, CardBody, CardTitle } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 const UserItem = ({ user: { login, avatar_url, html_url } }) => {
   return (
-    <Col xs='6' lg='3' xl='2' className='my-3'>
+    <Col xs='6' md='3' xl='2' className='my-3'>
       <Card>
         <CardImg
           top
@@ -14,14 +15,12 @@ const UserItem = ({ user: { login, avatar_url, html_url } }) => {
         />
         <CardBody className='text-center'>
           <CardTitle>{login}</CardTitle>
-          <a
-            href={html_url}
+          <Link
+            to={`/user/${login}`}
             className='btn btn-info btn-sm btn-block my-1'
-            target='_blank'
-            rel='noopener noreferrer'
           >
-            Visit
-          </a>
+            More info
+          </Link>
         </CardBody>
       </Card>
     </Col>

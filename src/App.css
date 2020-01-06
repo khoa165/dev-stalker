@@ -1,7 +1,11 @@
-div.card-body {
+#users .card-body {
   padding: 5px 10px;
 }
 
-div.card-body .card-title {
+#users .card-body .card-title {
   margin: 0;
+}
+
+.navbar-dark .navbar-nav a.nav-link {
+  color: white;
 }

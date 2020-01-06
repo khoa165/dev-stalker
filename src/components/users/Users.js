@@ -9,11 +9,13 @@ const Users = ({ users, loading }) => {
     return <Spinner />;
   } else {
     return (
-      <Row>
-        {users.map(user => (
-          <UserItem key={user.id} user={user} />
-        ))}
-      </Row>
+      <div id='users'>
+        <Row>
+          {users.map(user => (
+            <UserItem key={user.id} user={user} />
+          ))}
+        </Row>
+      </div>
     );
   }
 };
