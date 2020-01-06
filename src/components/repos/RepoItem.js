@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Col, Card } from 'reactstrap';
+import { Col } from 'reactstrap';
 
 export const RepoItem = ({ repo }) => {
   return (
