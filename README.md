@@ -1,6 +1,6 @@
 # Dev Stalker
 #### Built with React with Hooks and Context API, Reactstrap (Bootstrap)
-Websites: https://devstalker.netlify.com/
+Website: https://devstalker.netlify.com/
 
 -----------------------------------------------------
 Available features:
